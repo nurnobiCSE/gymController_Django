@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login user</title>
+	<link rel="stylesheet" href="{% static 'css/login_style.css' %}">
+</head>
+<body>
+	<div class="logo">
+		<a href="{% url 'home' %}"><img width="60" height="50" src="https://thumbs.dreamstime.com/b/pin-location-house-home-icon-logo-design-element-can-be-used-as-as-complement-to-95678746.jpg" alt="logo not found"></a>
+	</div>
+	<div class="center">
+		<h1>Login</h1>
+		<form action="" method="post">
+			<div class="text_field">
+				<input type="text" required>
+				<span></span>
+				<label for="">Username</label>
+			</div>
+			<div class="text_field">
+				<input type="password" required>
+				<span></span>
+				<label for="">password</label>
+			</div>
+			<div class="pass">Forgot password?</div>
+			<input type="submit" value="Login">
+			<div class="signup_link">
+				Not a member ? <a href="#">Signup</a>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
